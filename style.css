@@ -67,3 +67,11 @@ p.outline {
   /*border-style: outset;
   border-top-color: #ff0000*/
 }
+/* Make all links blue*/
+a:visited {
+ color: blue;
+}
+/* Change link color when hovering*/
+a:hover{
+ color: red;
+}
