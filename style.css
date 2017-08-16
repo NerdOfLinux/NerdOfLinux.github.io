@@ -11,6 +11,12 @@ body{
   margin-top: 10px;
 }
 
+/* Change outline when hovering */
+#content:hover{
+  border-style: inset;
+  margin-top: 10px;
+}
+
 #header{
   /* Put the header div in the middle */
   text-align: center; 
