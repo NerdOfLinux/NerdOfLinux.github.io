@@ -11,7 +11,7 @@
 <body>
   <p> I currently created the following plugins:
    <ul>
-    <a href="/memberonly.html"><li> Member Only Content</li> </a>
+    <a href="/plugins/memberonly.html"><li> Member Only Content</li> </a>
    </ul>
 </body>
   </div>
