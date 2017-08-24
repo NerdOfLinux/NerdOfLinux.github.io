@@ -17,6 +17,11 @@ body{
   margin-top: 10px;
 }
 
+/* Create a margin between text and content div*/
+#content p{
+  margin-left: 5px;
+}
+
 #header{
   /* Put the header div in the middle */
   text-align: center; 
