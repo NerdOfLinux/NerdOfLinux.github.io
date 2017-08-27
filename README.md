@@ -1,1 +1,1 @@
-A lot of the css also probably came from w3schools.com
+A lot of the code also probably came from w3schools.com
