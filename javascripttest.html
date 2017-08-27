@@ -7,10 +7,12 @@
     <iframe src="/navigation.html" scrolling="no"></iframe>
   </div>
   </head>
- <div id="content" style="background-color: red;">
+  <style> #content{background-color: red;}</style>
+  <div id="content" <script> 
+  document.write("style='background-color: green;'")
+  </script>>
 <body>
   <script>
-    document.write("<style> #content{background-color: #2ECC71;}</style>");
     document.write("<strong> Javascript is working! :-) </strong>");
   </script>
   <noscript> Javascript is <strong> NOT </strong> working! </noscript>
