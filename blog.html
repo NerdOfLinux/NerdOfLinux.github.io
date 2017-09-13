@@ -13,10 +13,10 @@
   <p> You are being redirected to <a href="https://gateblogs.com"> Gate Blogs </a> in<br>:
     <script>
       //from: https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
-      var timeleft = 0;
+      var timeleft = 5;
       var downloadTimer = setInterval(function(){
-      document.getElementById("progressBar").value = 0 + --timeleft;
-      if(timeleft >= 5)
+      document.getElementById("progressBar").value = 5 - --timeleft;
+      if(timeleft <= 0)
        clearInterval(downloadTimer);
       },1000);
     </script>
