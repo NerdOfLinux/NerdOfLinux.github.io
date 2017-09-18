@@ -11,32 +11,40 @@
   </head>
  <div id="content">
 <body>
-  Phone NUmber: <input type="text" value="" id="phoneNum"/>
+ 
+  Phone Number: <input type="text" value="" id="phoneNum"/>
   <select id="carrier">
-    <option> T-Mobile </option>
-    <option> Verizon </option>
-    <option> AT&T </option>
-    <option> Sprint </option>
+    
   </select>
   <button onclick="getEmail()"> Get Email Address</button>
   <br> Email: 
-  <p id="email">
-  <script>
+  <p id="email"></p>
+   <script>
+    carriers = ["T-Mobile", "Verizon", "AT&T", "Sprint", "Virgin Mobile", "Tracfone", "Metro PCS", "Boost Mobile", "Cricket", "Ptel", "Republic Wireless", "Google Fi", "Suncom", "Ting", "U.S. Cellular", "Consumer Cellular", "C-Spire", "Page Plus"];
+    for (i=0; i<carriers.length; i++){
+    	var selectList = document.getElementById("carrier");
+    	var option = document.createElement("option");
+   		option.text = carriers[i];
+    	selectList.add(option); 
+    }
     function getEmail() {
       var phoneNum = document.getElementById("phoneNum").value;
-      var carrierList = document.getElementById();
+      var carrierList = document.getElementById("carrier");
       var carrier = carrierList.options[carrierList.selectedIndex].text;
-      var carriers = ["T-Mobile", "Verizon", "AT&T", "Sprint"];
       //https://20somethingfinance.com/how-to-send-text-messages-sms-via-email-for-free/
-      carrierEmails = ["tmomail.net", "vtext.com", "txt.att.net", "messaging.sprintpcs.com"];
+      carrierEmails = ["tmomail.net", "vtext.com", "txt.att.net", "messaging.sprintpcs.com", "vmobl.com", "mmst5.tracfone.com", "mymetropcs.com", "myboostmobile.com", "mms.criecketwireless.net", "ptel.com", "text.republicwireless.com", "msg.fi.google.com", "tms.suncom.com","message.ting.com", "email.uscc.net", "cingularme.com", "cspire1.com", "vtext.com"];
       //https://www.w3schools.com/js/js_loop_for.asp
       carrierEmail="";
       for (i=0; i<carriers.length;i++){
+      document.getElementById("email").innerHTML= i;
         if (carriers[i] == carrier){
           carrierEmail=carrierEmails[i]
         }
       }
-      document.getElementById("email").innerHTML= phoneNum,"@",carrierEmail;
+      text=phoneNum;
+      text += "@";
+      text += carrierEmail;
+      document.getElementById("email").innerHTML= text;
     }
   </script>
 </body>
