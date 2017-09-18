@@ -17,8 +17,8 @@
   <script>
     function downloadSite() {
       var website = document.getElementById("website").value;
-      var downloadLink = "<a href='",website,"' download> Download ",website," </a>";
-      document.getElementById("downloadLink").innerHTML=downloadLink;
+      var downloadLinkText = "<a href='",website,"' download> Download ",website," </a>";
+      document.write(downloadLinkText);
     }
   </script>
 </body>
