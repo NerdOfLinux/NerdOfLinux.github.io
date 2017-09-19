@@ -29,6 +29,8 @@
     }
     function getEmail() {
       var phoneNum = document.getElementById("phoneNum").value;
+      //From: https://www.w3schools.com/jsref/jsref_replace.asp
+      var phoneNum = phoneNum.replace("-", "");
       var carrierList = document.getElementById("carrier");
       var carrier = carrierList.options[carrierList.selectedIndex].text;
       //https://20somethingfinance.com/how-to-send-text-messages-sms-via-email-for-free/
