@@ -1,1 +1,28 @@
-
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <div id="header">
+  <title> Tools | NerdOfLinux </title>
+  <h1 class="outline"> Download a site page </h1><hr />
+    <iframe src="/navigation.html" scrolling="no"></iframe>
+  </div>
+  </head>
+ <div id="content">
+<body>
+  Put text below seperated by commas:<br>
+  Website: <textarea type="text" value="" id="text" rows="4" cols="50"/>
+  <button onclick="alphabetize()"> Alphabetize </button>
+  <p id="alphabetized"> Alphabetized text will appear here</p>
+  <script>
+    function alphabetize() {
+      var text = document.getElementById("text").value;
+      //Read about https://www.w3schools.com/jsref/jsref_split.asp
+      text = text.split(",");
+      //From: https://www.w3schools.com/jsref/jsref_sort.asp
+      var sortedText = text.sort();
+      document.getElementById("alphabetized").innerHTML= sortedText;
+    }
+  </script>
+</body>
+  </div>
+</html>
