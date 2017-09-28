@@ -43,9 +43,14 @@
           carrierEmail=carrierEmails[i]
         }
       }
-      text=phoneNum;
-      text += "@";
-      text += carrierEmail;
+      emailAddress=phoneNum;
+      emailAddress += "@";
+      emailAddress += carrierEmail;
+      text="<a href=\"mailto:";
+      text += emailAddress;
+      text += "\">";
+      text += emailAddress;
+      text += "</a>";
       document.getElementById("email").innerHTML= text;
     }
   </script>
