@@ -13,11 +13,11 @@
 Place some HTML code below:<br>
 HTML: <textarea type="text" value="" id="text" rows="4" cols="50"/></textarea>
 <button onclick="testHTML()"> Test </button>
-<p id="alphabetized"> Alphabetized text will appear here</p>
-<script type="text/rocketscript">
+<p id="htmlArea"> HTML will appear here </p>
+<script>
     function testHTML() {
       var htmlCode = document.getElementById("text").value;
-      document.getElementById("alphabetized").innerHTML= htmlCode;
+      document.getElementById("htmlArea").innerHTML= htmlCode;
     }
   </script>
 </body>
