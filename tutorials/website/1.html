@@ -1,10 +1,10 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="https://nerdoflinux.gateblogs.com/style.css">
   <div id="header">
   <title> Making Your First Site | NerdOfLinux </title>
   <h1 class="outline"> NerdOfLinux's Site </h1><hr />
-    <iframe src="/navigation.html" scrolling="no"></iframe>
+    <iframe src="https://nerdoflinux.gateblogs.com/navigation.html" scrolling="no"></iframe>
   </div>
   </head>
  <div id="content">
@@ -14,13 +14,31 @@
     <ul>
       <li> A web browser </li>
       <li> A basic text editor(not Word, but something like notepad) </li>
+      <li> You could also use something like the <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic"> Tryit Editor </a> from w3schools(I use it a lot)</li>
       <li> Time and patience </li>
     </ul>
   <h2> Let's start! </h2>
     <p> The nice thing about starting with just HTML is that it's 100% client side, meaning you won't need a server to host it. Simply make a .html file, and open it your browser! Be sure to use a simple text editor that won't format your text, or else you might have some problems.
     <p> HTML stands for Hyper Text Markup Language, and it is the language that the internet is written in. Sure, CSS, javascript, and a ton of other languages are also important, but HTML is still the core. The most important thing in HTML is tags, they look something like:
-  <pre> <tag> content </tag> </pre>
-    <p> 
+  <!--- Thank you, https://stackoverflow.com/questions/2820453/display-html-code-in-html -->
+  <pre> &lttag&gt content &lt/tag&gt </pre>
+    <p> Tags basically tell the browser when something starts and when something ends. The tag you'll use most is probably the &ltp&gt tag, which is used to define a paragraph. 
+    <p> Now, onto the creating the site part! First, open your text editor, and copy and paste the following: 
+    <pre>
+    &lthtml&gt
+      &lthead&gt
+        &lttitle&gt This is the title &lt/title&gt
+      	&lth1&gt This is the header &lt/h1&gt
+      &lt/head&gt
+      &ltbody&gt
+        This is the body of your site.
+      &lt/body&gt
+    &lt/html&gt
+    </pre>
+  and open it in a file.
+  <p> The &lthtml&gt tag is at the top of more or less any website you go to, and is there so the browser knows that the HTML is starting. The &lthead&gt tag is short for header, and this is where I like to put the &lttitle&gt tag, which sets the tab title, and the &lth1&gt tag, which is the biggest heading text tag. All tags close with &lt/tag&gt(replace tag with the actual tag name). The &ltbody&gt tag is where the main content usually lives. 
+  <p> Past the above HTML code in a file called index.html, and open it in your browser. Then, replace the text in between the tags to whatever you want.
+  <h3> Congrats on making your first (basic) site! </h3>
  </body>
   </div>
 </html>
